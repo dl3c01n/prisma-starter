@@ -5,10 +5,14 @@
   "license": "MIT",
   "scripts": {
     "migrate": "npx prisma migrate dev --name init",
-    "start": "npx ts-node index.ts"
+    "start": "npx ts-node index.ts",
+    "serve": "npx ts-node app.ts"
   },
   "dependencies": {
     "@prisma/client": "3.7.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "prisma": "^3.7.0"
   }
 }
